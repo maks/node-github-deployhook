@@ -7,9 +7,9 @@
         "email": "maks@manichord.com",
         "url": "http://manichord.com"
     },
-    "main": "server.js",
+    "main": "lib/server.js",
     "dependencies": {
-        "nlogger" : "",
+        "nlogger": ""
     },
   "engine": "node 0.6.x"
 }

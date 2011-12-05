@@ -1,4 +1,4 @@
-h1. As simple as possible github webhook for nodejs deployment
+h1. A simple continuous deploy server for github projects
 
 h2. Author: Maksim Lin
 
