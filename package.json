@@ -1,0 +1,15 @@
+{
+    "name": "node-github-deployhook",
+    "version" : "0.0.1",
+    "description": "A simple continuous deploy server for github projects",
+    "author": {
+        "name": "Maksim Lin",
+        "email": "maks@manichord.com",
+        "url": "http://manichord.com"
+    },
+    "main": "server.js",
+    "dependencies": {
+        "nlogger" : "",
+    },
+  "engine": "node 0.6.x"
+}
