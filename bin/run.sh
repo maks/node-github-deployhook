@@ -3,4 +3,5 @@ export PORT=1974
 export DEPLY_PATH=/var/www/mydvds/app
 export RESTART_CMD="sudo restart mydvds"
 
-node lib/server.js
+cd /var/www/node-github-deployhook
+node lib/server.js 2>>  /var/log/nodejs/node-github-deployhook-error.log 1>> /var/log/nodejs/node-github-deployhook.log
