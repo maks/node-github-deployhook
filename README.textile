@@ -8,7 +8,7 @@ This is a very simple continous deploy server that listens on a port for POSTs f
 githubs post-receive webhook.
 
 The server will cwd into the project folder. This fodler is expected to be a git working copy
-where it will execute "git pull origin master && npm install".
+where it will execute "git pull origin master && npm update".
 
 Note that the server will only run if it gets a payload that specifies a push tp the master branch,
 ie. refs/heads/master
