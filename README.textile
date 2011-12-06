@@ -2,6 +2,28 @@ h1. A simple continuous deploy server for github projects
 
 h2. Author: Maksim Lin
 
+h2. Usage
+
+This is a very simple continous deploy server that listens on a port for POSTs from
+githubs post-receive webhook.
+
+The server will cwd into the project folder. This fodler is expected to be a git working copy
+where it will execute "git pull origin master && npm install".
+
+Note that the server will only run if it gets a payload that specifies a push tp the master branch,
+ie. refs/heads/master
+
+
+h3. Configuration
+
+Configuration is via environment variables:
+
+PORT - port to listen on
+RESTART_CMD - the shell command to execute
+DEPLOY_PATH - the path to append the project name to that becomes the cwd prior to pulling from the gitrepo
+ 
+Please set the bin/run.sh as an example.
+
 h2. License
 
 Copyright 2011 Maksim Lin
@@ -19,4 +41,4 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Mydvds.  If not, see <http://www.gnu.org/licenses/>.
+along with node-github-deployhook.  If not, see <http://www.gnu.org/licenses/>.
