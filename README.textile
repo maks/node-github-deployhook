@@ -7,10 +7,10 @@ h2. Usage
 This is a very simple continous deploy server that listens on a port for POSTs from
 githubs post-receive webhook.
 
-The server will cwd into the project folder. This fodler is expected to be a git working copy
+The server will cwd into the project folder. This folder is expected to be a git working copy
 where it will execute "git pull origin master && npm update".
 
-Note that the server will only run if it gets a payload that specifies a push tp the master branch,
+Note that the server will only run if it gets a payload that specifies a push to the master branch,
 ie. refs/heads/master
 
 
